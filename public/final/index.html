@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final Room Ledger - Riverbend Civic Archive</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="masthead">
+      <a class="brand" href="/"><img src="/assets/emblem.svg" alt="" width="72" height="72"><span><strong>Riverbend Civic Archive</strong><small>volunteer-maintained since 1996</small></span></a>
+      <nav aria-label="Main navigation"><a href="/about.html">About</a><a href="/programs.html">Programs</a><a href="/minutes.html">Minutes</a><a href="/contact.html">Contact</a></nav>
+    </header>
+    <main class="content">
+      <article class="final-box">
+        <h1>Final Room Ledger</h1>
+        <p>The ledger accepts the archive tag assembled from the renovation trail. Hyphens are fine. Capitalization is ignored.</p>
+        <form class="archive-form" id="final-form">
+          <label for="key">Archive tag</label>
+          <input id="key" name="key" autocomplete="off" spellcheck="false" placeholder="part-one-part-two-part-three-part-four">
+          <button type="submit">Open ledger</button>
+        </form>
+        <div class="result" id="result" aria-live="polite"></div>
+      </article>
+    </main>
+    <footer class="site-footer"><span>Last hand-edited: 2003-02-11</span><span>Crawlers: please respect posted policy.</span></footer>
+  </div>
+  <script>
+    const form = document.getElementById("final-form");
+    const result = document.getElementById("result");
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      result.textContent = "Checking ledger...";
+      if (window.RiverbendI18n) window.RiverbendI18n.apply();
+      const key = new FormData(form).get("key");
+      const response = await fetch("/api/unseal", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ key })
+      });
+      const data = await response.json();
+      if (!data.ok) {
+        result.textContent = data.message;
+        if (window.RiverbendI18n) window.RiverbendI18n.apply();
+        return;
+      }
+      result.innerHTML = `<p>${data.message}</p><p class="flag">${data.flag}</p>`;
+      if (window.RiverbendI18n) window.RiverbendI18n.apply();
+    });
+  </script>
+  <script src="/assets/i18n.js"></script>
+</body>
+</html>

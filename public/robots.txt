@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /1998-renovation/
+
+# Closed stacks were hidden from crawlers after the roofline objects moved.
+# Public volunteers may still need: /1998-renovation/loose-board.html

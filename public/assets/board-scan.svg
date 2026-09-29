@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-label="Scan of a loose archive board with labeled shelves">
+  <rect width="760" height="520" fill="#eee5ce"/>
+  <rect x="46" y="42" width="668" height="436" fill="#f9f4e8" stroke="#8f836c" stroke-width="3"/>
+  <g fill="#dad0b8" stroke="#8f836c">
+    <rect x="92" y="112" width="576" height="46"/>
+    <rect x="92" y="190" width="576" height="46"/>
+    <rect x="92" y="268" width="576" height="46"/>
+    <rect x="92" y="346" width="576" height="46"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="24" fill="#342b1f">
+    <text x="112" y="143">church-bell</text>
+    <text x="112" y="221">river-map</text>
+    <text x="112" y="299">weather-vane</text>
+    <text x="112" y="377">north-lamp</text>
+  </g>
+  <path d="M494 257l28-12 34 18-7 63-28 10-31-19z" fill="#f6f1dc" stroke="#8e3e2f" stroke-width="3"/>
+  <path d="M517 254v78M491 317l62-54" stroke="#8e3e2f" stroke-width="3"/>
+  <text x="382" y="446" font-family="Courier New, monospace" font-size="18" fill="#6e6758">Loose board, 1998 renovation box</text>
+</svg>

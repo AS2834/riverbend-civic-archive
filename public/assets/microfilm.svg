@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="330" viewBox="0 0 660 330" role="img" aria-label="Microfilm strip">
+  <rect width="660" height="330" fill="#2b2a24"/>
+  <rect x="34" y="44" width="592" height="242" fill="#161711" stroke="#6e6758" stroke-width="3"/>
+  <g fill="#ece4cf">
+    <rect x="55" y="64" width="34" height="28"/>
+    <rect x="55" y="116" width="34" height="28"/>
+    <rect x="55" y="168" width="34" height="28"/>
+    <rect x="55" y="220" width="34" height="28"/>
+    <rect x="571" y="64" width="34" height="28"/>
+    <rect x="571" y="116" width="34" height="28"/>
+    <rect x="571" y="168" width="34" height="28"/>
+    <rect x="571" y="220" width="34" height="28"/>
+  </g>
+  <rect x="125" y="78" width="410" height="174" fill="#eee5ce"/>
+  <text x="330" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#342b1f">REGISTER 1912</text>
+  <text x="330" y="184" text-anchor="middle" font-family="Courier New, monospace" font-size="18" fill="#6e6758">drawer label absent from print</text>
+</svg>

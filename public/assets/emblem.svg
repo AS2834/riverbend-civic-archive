@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144" role="img" aria-label="Riverbend Civic Archive emblem">
+  <rect width="144" height="144" fill="#f7f4ea"/>
+  <circle cx="72" cy="72" r="58" fill="#315f50"/>
+  <circle cx="72" cy="72" r="48" fill="#f7f4ea" stroke="#8e3e2f" stroke-width="4"/>
+  <path d="M28 82c16-14 32-14 48 0s32 14 48 0" fill="none" stroke="#244f73" stroke-width="8" stroke-linecap="round"/>
+  <path d="M72 31l8 23 24 1-19 14 7 24-20-14-20 14 7-24-19-14 24-1z" fill="#8e3e2f"/>
+  <text x="72" y="121" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#28241b">RCA</text>
+</svg>
